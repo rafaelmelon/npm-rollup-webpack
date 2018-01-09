@@ -1,0 +1,19 @@
+{
+  "name": "rollup-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --entry ./src/strings.js --output-path dist --output-filename webpack-bundle.js",
+    "webpack-c": "webpack",
+    "rollup": "rollup --output dist/rollup-bundle.js --format es src/strings.js",
+    "rollup-c": "rollup -c"
+  },
+  "author": "Rafael Melón <info@rafaelmelon.es>",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^0.53.3",
+    "webpack": "^3.10.0"
+  }
+}
